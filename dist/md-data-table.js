@@ -54,7 +54,7 @@ angular.module('md-table-progress.html', []).run(['$templateCache', function($te
   $templateCache.put('md-table-progress.html',
     '<tr>\n' +
     '  <th colspan="{{columnCount()}}">\n' +
-    '    <md-progress-linear ng-show="deferred()" md-mode="indeterminate"></md-progress-linear>\n' +
+    '    <md-progress-linear ng-show="deferred()" ng-disabled="!deferred()"g md-mode="indeterminate"></md-progress-linear>\n' +
     '  </th>\n' +
     '</tr>');
 }]);
